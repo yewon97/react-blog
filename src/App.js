@@ -1,12 +1,13 @@
-// react에 있는 내장 함수를 가져다가 쓰겠습니다!
 import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  useState('남자 코트 추천'); // -> [a, b] 형식으로 출력
-  // a -> '남자 코트 추천'
-  // b -> '남자 코트 추천' state를 정정해주는 함수
+  // ES6 destructuring 문법 : array, object에 있던 자료를 변수에 쉽게 담고 싶을 때
+  // var [a, b] = [10, 100]; -> a변수에 10저장, b변수에 100저장
+
+  // 리액트의 데이터 저장공간 state 만드는 법
+  let [글제목, 글제목변경] = useState('남자 코트 추천');
 
   let posts = '강남 고기 맛집'; // 변수에 데이터 저장하고
   return (
@@ -15,7 +16,7 @@ function App() {
         <div>개발 Blog</div>
       </div>
       <div className='list'>
-        <h4>{posts}</h4> {/* 데이터 바인딩 했음 */}
+        <h4>{posts}</h4>
         <p>2월 17일 발행</p>
         <hr />
       </div>
