@@ -65,4 +65,13 @@ function Modal() {
   );
 }
 
+/* 어떤걸 Component로 만드는게 좋을까? 
+- 반복출현하는 HTML 덩어리들
+- 자주 변경되는 HTML UI들
+- 다른 페이지 만들 때도 컴포넌트로 만듦*/
+
+/* Component 많이 만들면 단점
+- state 쓸 때 복잡해짐
+ (상위 component에서 만든 state 쓰려면 props 문법 이용해야함) */
+
 export default App;
