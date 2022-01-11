@@ -15,6 +15,11 @@ function App() {
     newArray[0] = '여자 코트 추천';
     글제목변경(newArray);
   }
+
+  /* <Array, Object state 데이터 수정 방법
+  - 일단 변경함수 사용해야함
+  - 변경함수(데체할 데이터)
+  - state는 직접 건들면 안됨 > deep copy해서 그걸 건들려야함 */
   
   return (
     <div className="App">
