@@ -32,17 +32,36 @@ function App() {
         <p>2월 17일 발행</p>
         <hr />
       </div>
+      <Modal />
       <div className="list">
         <h4>{글제목[1]}</h4>
         <p>2월 17일 발행</p>
         <hr />
       </div>
+      <Modal />
       <div className="list">
         <h4>{글제목[2]}</h4>
         <p>2월 17일 발행</p>
         <hr />
       </div>
+      <Modal />
+
     </div>
+  );
+}
+
+// 컴포넌트 만들기 - App.js와 나란히 작성하면됨
+/* -유의사항-
+1. 이름은 대문자
+2. return() 안에 있는건 태그 하나로 묶어야함 
+3. return() 내부를 묶을 때 의미없는 <div> 쓰기 싫으면 <></> */
+function Modal() {
+  return (
+    <div className='modal'>
+      <h2>제목</h2>
+      <p>날짜</p>
+      <p>상세내용</p>
+  </div>
   );
 }
 
