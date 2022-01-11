@@ -1,5 +1,4 @@
 /* eslint-disable */
-// ↑↑↑ 터미널에 뜨는 warning eslint 보기 싫으면... 
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -15,7 +14,7 @@ function App() {
         <div>개발 Blog</div>
       </div>
       <div className="list">
-        <h4>{글제목[0]}</h4>
+        <h4>{글제목[0]} <span onClick={ () => { console.log(1); }}>👍</span> 0 </h4>
         <p>2월 17일 발행</p>
         <hr />
       </div>
