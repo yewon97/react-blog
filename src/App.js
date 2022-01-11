@@ -12,8 +12,8 @@ function App() {
     // var newArray = 글제목; -> 안됨, 복사가 아니라 값 공유임 (reference data type)
     // deep copy 해야함, 객체는 중괄호 써서 하면됨
     var newArray = [...글제목];
-    newArray[0] = '여자 코트 추천';
-    글제목변경(newArray);
+    const reverse = newArray.reverse()
+    글제목변경(reverse);
   }
 
   /* <Array, Object state 데이터 수정 방법
