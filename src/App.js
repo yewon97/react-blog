@@ -9,7 +9,11 @@ function App() {
   let posts = '강남 고기 맛집';
 
   function 제목바꾸기() {
-    글제목변경(['여자 코트 추천', '강남 우동 맛집', '파이썬 독학']);
+    // var newArray = 글제목; -> 안됨, 복사가 아니라 값 공유임 (reference data type)
+    // deep copy 해야함, 객체는 중괄호 써서 하면됨
+    var newArray = [...글제목];
+    newArray[0] = '여자 코트 추천';
+    글제목변경(newArray);
   }
   
   return (
